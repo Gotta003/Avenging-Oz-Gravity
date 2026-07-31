@@ -1,0 +1,74 @@
+.board-screen {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: system-ui, sans-serif;
+}
+
+.hint {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.area-tile {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.area-tile.owner-p1 {
+  background: #cfe3ff;
+  border-color: #4d7fd1;
+}
+
+.area-tile.owner-p2 {
+  background: #ffd9d9;
+  border-color: #d14d4d;
+}
+
+.area-tile.selected {
+  outline: 3px solid #333;
+}
+
+.area-name {
+  font-weight: 600;
+}
+
+.area-units {
+  font-size: 1.4rem;
+}
+
+.resolve-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.log {
+  margin-top: 16px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #444;
+  max-height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
